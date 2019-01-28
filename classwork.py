@@ -20,12 +20,12 @@ def problem1():
 
     # A while loop that keeps iterating the user inputted value, until q is typed to quit.
     while True:
-        prompt = input("Congratulations! You're running Cierra's Task List program.\nEnter what would you like to do next:\n1. List all tasks.\n2. Add a task to the list.\n3. Delete a task.\n0. To quit the program press 'q'. ")
+        prompt = int(input("Congratulations! You're running Cierra's Task List program.\nEnter what would you like to do next:\n1. List all tasks.\n2. Add a task to the list.\n3. Delete a task.\n0. To quit the program press '0'. "))
 
         for goals in toDoList:
             print(goals)
 
-        if prompt.lower() == "q":
+        if prompt == 0:
             break
         elif prompt == 1:
             print(toDoList)
@@ -33,7 +33,8 @@ def problem1():
             prompt2 = input("Enter a task to add to the the list.")
             toDoList.append(prompt2)
         elif prompt == 3:
-            toDoList.remove([])
+            prompt3 = int(input("Enter a value between 0-4")
+            toDoList.remove(prompt3)
 
 
 
