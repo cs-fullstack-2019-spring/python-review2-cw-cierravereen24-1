@@ -33,8 +33,7 @@ def problem1():
             prompt2 = input("Enter a task to add to the the list.")
             toDoList.append(prompt2)
         elif prompt == 3:
-            prompt3 = int(input("Enter a value between 0-4")
-            toDoList.remove(prompt3)
+            toDoList.remove([prompt3])
 
 
 
